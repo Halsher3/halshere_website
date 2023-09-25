@@ -82,3 +82,36 @@ article {
         display: flex;
     }
 }
+/* for the contact card*/
+.contact-card {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border: solid 3px black;
+}
+
+/* just for the art */
+
+.art-piece {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(130, 147, 242);
+    border: solid 2px #0189c8;
+}
+
+.art-piece img {
+    width: 100%;
+}
+
+.art-piece .title {
+    font-weight: bold;
+}
+
+.art-piece .columns {
+    width: 100%;
+}
+
+.art-piece .date-made {
+    text-align: right;
+}
