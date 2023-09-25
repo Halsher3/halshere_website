@@ -1,0 +1,105 @@
+/* this is the universal symbol for the website */
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+}
+
+h3 {
+    display: inline-block;
+    width: 50%;
+
+}
+
+/* this added a margin to the top and bottom of elements */
+p {
+    margin: 0.5em 0 0.5em 0;
+}
+
+header {
+    display: block;
+    height: 230px;
+    padding: 20px 0 0px 0;
+    background-image: url("images/rx81.png");
+    background: blue 70% 0 img no-repeat;
+    background-attachment: fixed, fixed, fixed, scroll;
+    background-position: center;
+    background-position-y: -450px;
+    background-size: auto, auto, auto, cover;
+    text-align: center;
+}
+
+nav a:visited, nav a:link {
+    color: rgb(137, 86, 86);
+    text-decoration: none;
+}
+
+nav > ul {
+    display: inline;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 5px 0 5px;
+}
+
+main {
+    display: block;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    min-height: 85%;
+}
+
+/* FROM ZEN 
+header {
+    height: 230px;
+    padding: 20px 0 70px 0;
+    background: #2d6360 50% 0 img no-repeat;
+    background-attachment: fixed, fixed, fixed, scroll;
+    background-image: url(contours.png), url(noise.png), url(gridlines.png), url(huntington.jpg);
+    background-position: 0 0, 0 0, -5px -25px, 0 50%;
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    background-size: auto, auto, auto, cover;
+    text-align: center;
+}
+*/
+footer {
+    padding: 15px;
+}
+
+article {
+    padding: 2em;
+}
+
+aside {
+    text-align: center;
+}
+
+article {
+    width: 75%;
+}
+
+/* for desktop screens */
+@media only screen and (min-width: 768px) {
+
+    main{
+        display: flex;
+    }
+
+    aside {
+        margin-left: 2%;
+    }
+
+    .columns-desktop {
+        display: flex;
+    }
+}
