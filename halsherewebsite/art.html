@@ -9,6 +9,23 @@
     <style>
 
     </style>
+    <script>
+
+        function save(){
+            localStorage.setItem("artpiece", true);
+        }
+
+        window.onload = function(){
+            var favorite = document.getElementById('like')
+            if (window.localStorage) {
+                var storage = window.localStorage;
+                if (storage.getItem('artpiece') == 'true') {
+                    favorite.innerHTML = "You liked this piece";
+                }
+            }
+        }
+
+    </script>
 </head>
 <body>
     <header>
@@ -38,22 +55,26 @@
                </div>
 
                <div class="art-piece">
-                <img src="images/sky.png" alt="sky" width="300" height="300"/>
-                <div class="columns">
-                    <div class="title">Sky</div>
-                    <div class="date-made">Oct 26, 2021</div>
+                    <img src="images/sky.png" alt="sky" width="300" height="300"/>
+                    <div class="columns">
+                        <div class="title">Sky</div>
+                        <div class="date-made">Oct 26, 2021</div>
+                    </div>
+                    <p class="desc"></p>
+                    <p>
+                        <button onClick="save()" type="button">Like this piece!</button>
+                        <span id="like"></span>
+                    </p>
                 </div>
-                <p class="desc"></p>
-            </div>
 
                <div class="art-piece">
-                <img src="images/finalhenny.png" alt="finalhenny" width="300" height="300"/>
-                <div class="columns">
-                    <div class="title">Final Henny</div>
-                    <div class="date-made">Sep 24, 2023</div>
+                    <img src="images/finalhenny.png" alt="finalhenny" width="300" height="300"/>
+                    <div class="columns">
+                        <div class="title">Final Henny</div>
+                        <div class="date-made">Sep 24, 2023</div>
+                    </div>
+                    <p class="desc">A piece I made with inspiration from Final Fantasy and Hennessy</p>
                 </div>
-                <p class="desc">A piece I made with inspiration from Final Fantasy and Hennessy</p>
-            </div>
 
             </section>
            </article>

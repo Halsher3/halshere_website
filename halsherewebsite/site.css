@@ -46,6 +46,10 @@ nav > ul > li {
 main {
     display: block;
     background-image: url("images/rx81.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     padding-top: 3em;
     padding-bottom: 3em;
     min-height: 85%;
