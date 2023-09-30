@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+@font-face {
+    font-family:avenir;
+    src: url(fonts/Avenir.ttc);
+}
+
 html, body {
     height: 100%;
 }
@@ -17,6 +22,57 @@ p {
     margin: 0.5em 0 0.5em 0;
 }
 
+/* NAV BAR ABOVE */
+.navbar > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+li {
+    float: left;
+  } 
+
+  .navbar li a, .dropbtn {
+    display: inline-block;
+    color: rgb(0, 99, 205);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(193, 193, 193);
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 header {
     display: block;
     position: fixed;
@@ -55,10 +111,6 @@ main {
     min-height: 85%;
 }
 
-footer {
-    padding: 15px;
-}
-
 aside, article {
     padding: 2em;
 }
@@ -68,7 +120,7 @@ aside {
 }
 
 article {
-    width: 75%;
+    width: 100%;
 }
 
 /* for desktop screens */
@@ -84,9 +136,16 @@ article {
 
     .columns-desktop {
         display: flex;
+        width: 100%;
     }
 }
 /* for the contact card*/
+.contact-title {
+    font-family: avenir;
+    position: relative;
+    text-align: center;
+
+}
 .contact-card {
     background-color: white;
     padding: 10px;
@@ -102,6 +161,7 @@ article {
     margin: 10px;
     background-color: rgb(130, 147, 242);
     border: solid 2px #0189c8;
+    box-shadow: 10px 10px 5px black;
 }
 
 .art-piece img {

@@ -10,37 +10,17 @@
     <style>
 
     </style>
-    <script>
-
-        function save(){
-            localStorage.setItem("artpiece", true);
-        }
-
-        window.onload = function(){
-            var favorite = document.getElementById('like')
-            if (window.localStorage) {
-                var storage = window.localStorage;
-                if (storage.getItem('artpiece') == 'true') {
-                    favorite.innerHTML = "You liked this piece";
-                }
-            }
-        }
-
-    </script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="art.html">Artwork</a></li>
-                <li><a href="contact.html">Contacts</a></li>
-                <li><a href="resume.html">Resume</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="art.html">Artwork</a></li>
+        </ul>
+    </div> 
     <main>
-        <aside><img src="images/HalshereLogoNew.png" alt="Halshere's Logo" width="300" height="300"></aside>
         <article>
             <h1>My Artwork and Edits</h1>
             <p>A lot of my work is made with Krita and Adobe Illustrator</p>
@@ -62,10 +42,6 @@
                         <div class="date-made">Oct 26, 2021</div>
                     </div>
                     <p class="desc"></p>
-                    <p>
-                        <button onClick="save()" type="button">Like this piece!</button>
-                        <span id="like"></span>
-                    </p>
                 </div>
 
                <div class="art-piece">
@@ -82,14 +58,14 @@
            </article>
     </main>
     <footer>
-        <nav>
+        <div class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="art.html">Artwork</a></li>
-                <li><a href="contact.html">Contacts</a></li>
                 <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="art.html">Artwork</a></li>
             </ul>
-        </nav>
+        </div> 
     </footer>
 </body>
 </html>
