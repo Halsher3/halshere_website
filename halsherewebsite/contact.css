@@ -101,7 +101,7 @@ nav > ul > li {
 
 main {
     display: block;
-    background-image: url("images/rx81.png");
+    background-image: url("images/Silver\ Bow.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -150,39 +150,17 @@ article {
     position: relative;
     text-align: center;
     color: white;
-    
+    width: 100%;
 
 }
-.contact-card {
+.contact-title .contact-card {
+    color: black;
     background-color: white;
     padding: 10px;
     margin: 10px;
     border: solid 3px black;
+    text-align: left;
+    width: 100%;
 }
 
 /* just for the art */
-
-.art-piece {
-    width: 300px;
-    padding: 10px;
-    margin: 10px;
-    background-color: rgb(130, 147, 242);
-    border: solid 2px #0189c8;
-    box-shadow: 10px 10px 5px black;
-}
-
-.art-piece img {
-    width: 100%;
-}
-
-.art-piece .title {
-    font-weight: bold;
-}
-
-.art-piece .columns {
-    width: 100%;
-}
-
-.art-piece .date-made {
-    text-align: right;
-}
