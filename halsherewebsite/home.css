@@ -27,6 +27,7 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    width: 100%;
   }
 
 li {
@@ -92,6 +93,12 @@ main {
     width: 100%;
     height: auto;
 }
+
+a { text-decoration: none; }
+a:visited { text-decoration: none; color:rgb(255, 255, 255); }
+a:hover { text-decoration: none; color:blue; }
+a:focus { text-decoration: none; color:yellow; }
+a:hover, a:active { text-decoration: none; color:rgb(0, 175, 210) }
 
 .homepagegif {
     display: block;
@@ -172,8 +179,8 @@ p {
         display: flex;
     }
 
-    aside {
-        margin-left: 2%;
+    .navbar {
+        display: flex;
     }
 
     .columns-desktop {
